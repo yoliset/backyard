@@ -1,0 +1,78 @@
+/* Tu CSS va aqui */
+
+*{
+    outline: 1px solid green;
+}
+
+clearfix{
+    display: table;
+}
+clearfix:after{
+    content:"";
+    clear: both;
+}
+
+
+header{
+    padding: 10px 0px;
+}
+.list-menu{
+    float: right;
+}
+.list-menu ul{
+    list-style: none;
+    
+}
+.list-menu li{
+    display: inline-block;
+    
+}
+.list-menu li a{
+    display: block;
+    padding: 15px 10px;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+.col-1 .col-2{
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.col1{
+    width: 60%;
+}
+.col2{
+    width: 40%;
+}
+
+.block-form{
+    
+    margin: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center:
+        
+}
+.block-form input,  .block-form button{
+    width: 100%;
+    box-sizing: border-box;
+}
+@media (max-width:900px){
+    .container{
+        width: 700px;
+    }
+}
+@media ( max-width:700px){
+    .container{
+        width: 100%;
+    }
+    .col1 .col2 {
+        width: 100%;
+    }
+    .block-form{
+        margin: 0;
+    }
+}
